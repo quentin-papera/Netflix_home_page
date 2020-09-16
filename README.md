@@ -1,2 +1,2 @@
 # Netflix Home Page
-with bootstrap 4 boiler 
+with bootstrap 4 boiler plate
