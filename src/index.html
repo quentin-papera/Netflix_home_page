@@ -13,47 +13,80 @@
         <header class="showcase">
             <div class="showcase-top">
                 <img src="img/logo.png" alt="Netflix">
-                <a href="#" class="btn btn-rounded">Sign In</a>
+                <a class="btn btn-rounded">Sign In</a>
             </div>
             <div class="showcase-content">
                 <h1>Unlimited movies, TV shows and more</h1>
                 <h2>Watch anywhere. Cancel at anytime</h2>
                 <h3>Ready to watch Netflix? Enter your email to create or restart your membership.</h3>
                 <input type="text" placeholder="Email Address" name="email">
-                <a href="#" class="btn btn-xl">Get Started<svg class="bi bi-chevron-right" width="28" height="28" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z"/></svg></a>   
+                <button class="btn btn-xl">Get Started<svg class="bi bi-chevron-right" width="28" height="28" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z"/></svg></button>
             </div>                  
-            </header>
+        </header>
         
         <section>
             <div class="carousel" data-flickity='{ "wrapAround": true }'>
                 <div class="carousel-cell"><img src="img/captain.america.jpg"></div>
                 <div class="carousel-cell"><img src="img/endgame.jpg"></div>
                 <div class="carousel-cell"><img src="img/blackpanther.jpg"></div>
-                <div class="carousel-cell"><img src="img/avengers.jpg"/></div>
+                <div class="carousel-cell"><img src="img/avengers.jpg"></div>
             </div>
         </section>
 
         <section>
             <div class="container">
                 <h1>Frequently Asked Questions</h1>
-                    <button id="buttonOne" class="btn"><h3>Is Netflix suitable for Kids?</h3></button>
-                    <button id="buttonTwo" class="btn"><h3>How do I cancel?</h3></button>
-                    <button id="buttonThree" class="btn"><h3>How much does Netflix cost?</h3></button>
-                    <button id="buttonFour" class="btn"><h3>Where can I watch Netflix?</h3></button>   
+                    <a class="btn btn-primary-color" id="buttonOne"><h3>Is Netflix suitable for Kids?</h3></a>
+                    <a class="btn btn-primary-color" id="buttonTwo"><h3>How do I cancel?</h3></a>
+                    <a class="btn btn-primary-color" id="buttonThree"><h3>How much does Netflix cost?</h3></a>
+                    <a class="btn btn-primary-color" id="buttonFour"><h3>Where can I watch Netflix?</h3></a>  
                 </div> 
             </div>
         </section>
-            <div class="bg-modal">
-                <div class="modal-content">
-                    <div class="close">+</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eos ullam, natus cupiditate nesciunt perspiciatis laudantium et non iste nemo!
-                        <br>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem omnis repellat repellendus dignissimos ipsum quibusdam minus temporibus placeat, officiis cupiditate.</p>
-                    </div>
-            </div>
-        <footer class="footer">
-            <h3>Any Questions call the real Netflix NZ <span>0800 472 310</span>
-        </footer>
+            <!-- FOOTER  -->
+            <footer id="main-footer" class="">
+					<div class="row">
+						<div class="col text-center">
+							<div class="py-4">
+								<h1 class="h3">Netflix Landing Page</h1>
+								<p class="text-center">Copyright &copy; 2020</p>
+								<button class="btn btn-primary-color" data-toggle="modal" data-target="#contactModal">Contact Us</button>
+							</div>
+						</div>
+					</div>
+            </footer>
+
+            <!-- CONTACT MODAL  -->
+            <div class="modal fade text-dark" id="contactModal">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="contactModalTitle">
+								Contact Us
+							</h5>
+						</div>
+						<div class="modal-body">
+							<form>
+								<div class="form-group">
+									<label for="name">Name</label>
+									<input type="text" class="form-control">
+								</div>
+								<div class="form-group">
+									<label for="email">Email</label>
+									<input type="text" class="form-control">
+								</div>
+								<div class="form-group">
+									<label for="message">Message</label>
+									<textarea class="form-control"></textarea>
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button class="btn btn-primary btn-block">Submit</button>
+						</div>
+					</div>
+				</div>
+			</div>
 
         <script src="js/jquery.min.js"></script>
         <script src="js/popper.min.js"></script>
